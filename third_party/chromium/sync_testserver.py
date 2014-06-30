@@ -600,7 +600,7 @@ class SyncPageHandler(testserver_base.BasePageHandler):
     if not self._ShouldHandleRequest(test_name):
       return False
 
-    html = open('html/synced_notifications.html', 'r').read()
+    html = open('third_party/chromium/html/synced_notifications.html', 'r').read()
 
     self.send_response(200)
     self.send_header('Content-Type', 'text/html')
@@ -615,7 +615,7 @@ class SyncPageHandler(testserver_base.BasePageHandler):
       return False
 
     html = \
-      open('html/synced_notification_app_info.html', 'r').\
+      open('third_party/chromium/html/synced_notification_app_info.html', 'r').\
       read()
 
     self.send_response(200)
@@ -658,5 +658,5 @@ class SyncServerRunner(testserver_base.TestServerRunner):
     # Override the default logfile name used in testserver.py.
     self.option_parser.set_defaults(log_file='sync_testserver.log')
 
-if __name__ == '__main__':
-  sys.exit(SyncServerRunner().main())
+# if __name__ == '__main__':
+#   sys.exit(SyncServerRunner().main())
