@@ -11,9 +11,9 @@ Prerequisites:
 
 Example for running the server on port 8090:
   ```python
-  python sync_testserver.py --port=8090
+  python sync_server.py --port=8090
   ```
-  
+
 there are a few cl options to know about. All other flags are for tasks to use if needed.
 
 - `--port` Port used by the server. If none is specified, the server will listen on an ephemeral port.
@@ -21,7 +21,7 @@ there are a few cl options to know about. All other flags are for tasks to use i
 - `--log-to-console` Enables sys.stdout logging default is False
 - `--log-file` The name of the server log file.
 - `--xmpp-port` Port used by the XMPP server. If unpecified, the XMPP server will listen on an ephemeral port.
-	
+
 
 ## Chromium settings
 
@@ -46,6 +46,6 @@ chrome.exe google-chrome --enable-logging --enable-synced-notifications \ --sync
   - Run as production server
   - Save logged data
 
-  
+
 ## License
 [MIT licence](http://opensource.org/licenses/MIT)
