@@ -1549,7 +1549,7 @@ class TestServer(object):
       else:
         print 'Unrecognizable sync request!'
         return (400, None)  # Bad request.
-      print 'Valur: %s' % response.__str__()
+      print 'Sync data: %s' % response.__str__()
       return (200, response.SerializeToString())
     except MigrationDoneError, error:
       print_context('<-')
