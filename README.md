@@ -2,6 +2,7 @@ chrome-sync-server
 ==================
 
 Sync server for use with Chromium
+Most of this code and libraries is from the Chromium source code, wich has a C++ testserver that needs to be compiled.
 
 ## To use the server:
 
