@@ -9,8 +9,9 @@ Prerequisites:
   * Python 2.7
 
 Example for running the server on port 8090:
-  
+  ```python
   python sync_testserver.py --port=8090
+  ```
   
 there are a few cl options to know about. All other flags are for tasks to use if needed.
 
@@ -23,14 +24,17 @@ there are a few cl options to know about. All other flags are for tasks to use i
 
 ## Chromium settings
 
-Chromium needs to run with command line flags that set the sync server custom url
+Chromium needs to run with command line flags that sets the sync server custom url and enables logging
 
 Linux:
+```
 chromium-browser --enable-logging --enable-synced-notifications \ --sync-url=http://127.0.0.1:1337/chromiumsync
+```
 
 Windows:
+```
 chrome.exe google-chrome --enable-logging --enable-synced-notifications \ --sync-url=http://127.0.0.1:1337/chromiumsync
-
+```
 ## Resources
 
   - [python.org](http://python.org/)
