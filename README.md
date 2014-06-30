@@ -4,12 +4,10 @@ chrome-sync-server
 Sync server for use with Chromium
 
 ## To use the server:
-=======
 
 Prerequisites:
   * Python 2.7
 
-	
 Example for running the server on port 8090:
   
   python sync_testserver.py --port=8090
@@ -24,7 +22,6 @@ there are a few cl options to know about. All other flags are for tasks to use i
 	
 
 ## Chromium settings
-==========
 
 Chromium needs to run with command line flags that set the sync server custom url
 
